@@ -11,4 +11,7 @@
 * As a user, I want to see generic exciting statements and descriptions
   in my website.
 * As an admin, I want to view if any errors occur on the site and
-  descriptive errors of what happened. 
+  descriptive errors of what happened.
+
+Used http://www.1stwebdesigner.com/create-scrolling-parallax-website/ as
+a template for creating the website. 
