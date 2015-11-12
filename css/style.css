@@ -8,7 +8,7 @@ body{
 }
 
 h1 { 
-    font-family:"Arvo";
+    font-family:Hind;
 	font-weight:normal;
 	font-size: 55px;
 	text-align: center;
@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-   font-family:"Arvo";
+   font-family:Hind;
    font-weight: normal;
    font-size: 40px;
    text-align: center;
@@ -59,8 +59,8 @@ a.rpanel:hover{ color: #fff; }
 	margin-top: 30px;
 }
 
-#nav { width: 410px; float: right; margin-top: 20px; }
-#logo a { color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }
+#nav { width: 410px; float: right; margin-top: 5px; }
+#logo a { color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-family:"Hind"; font-weight: bold; }
 #nav ul{
 	list-style: none;
 	display: block;
@@ -74,8 +74,8 @@ a.rpanel:hover{ color: #fff; }
 	padding-left: 21px;
 }
 
-#nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; }
-#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
+#nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Hind'; }
+#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; font-family: 'Hind'; }
 #nav li a:hover { color: #fff; opacity:1;  }
 
 
