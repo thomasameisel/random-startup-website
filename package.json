@@ -1,0 +1,19 @@
+{
+  "name": "random-startup-website",
+  "version": "0.0.1",
+  "description": "Generates a random startup website",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_PATH=lib node app.js",
+    "test": "mocha test"
+  },
+  "author": "Tommy Meisel",
+  "license": "Apache 2",
+  "dependencies": {
+    "express": "4.2.x",
+    "stylus": "0.52.4",
+    "jade": "1.11.0",
+    "nib": "1.1.0",
+    "morgan": "1.6.1"
+  }
+}
