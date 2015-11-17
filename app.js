@@ -18,10 +18,15 @@ app.use(stylus.middleware(
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-  res.render('index', { title: 'Home' });
+  res.render('form', { title: 'Random Startup Generator' });
+});
+
+app.post('/website', function(req, res) {
+  console.log("Creating website")
+  res.render('website', { title: 'Company Name' });
 });
 
 var port = 3000;
 app.listen(port, function(req, res) {
-  console.log("Listening on port ", port);
+  console.log("Listening on port", port);
 });

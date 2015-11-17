@@ -1,0 +1,25 @@
+doctype
+html
+  head
+    title #{title} - Startup Website Generator 
+    link(rel='stylesheet', href='/stylesheets/form/style.css')
+  body
+    header
+      h1 Startup Website Generator 
+    .container
+      .main-content
+        form(action='/website', method='post')
+          div
+            label(for='name') Company Name:
+            input#name(type='text')
+          div
+            label(for='slogn') Slogn:
+            input#slogn(type='text')
+          div
+            label(for='msg') Industry:
+            input#industry(type='text') 
+          .button
+            button(type='submit') Generate Website 
+ 
+    footer
+      p Running on node with Express, Jade, and Stylus
