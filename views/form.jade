@@ -1,7 +1,7 @@
 doctype
 html
   head
-    title #{title} - Startup Website Generator 
+    title #{title}
     link(rel='stylesheet', href='/stylesheets/form/style.css')
   body
     header
@@ -11,13 +11,13 @@ html
         form(action='/website', method='post')
           div
             label(for='name') Company Name:
-            input#name(type='text')
+            input(type='text', name='company[name]')
           div
             label(for='slogan') Slogan:
-            input#slogan(type='text')
+            input(type='text', name='company[slogan]')
           div
             label(for='industry') Industry:
-            input#industry(type='text') 
+            input(type='text', name='company[industry]') 
           .button
             button(type='submit') Generate Website 
  

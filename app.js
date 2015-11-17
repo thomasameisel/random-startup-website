@@ -16,7 +16,7 @@ app.use(stylus.middleware(
       compile: compile
     }
 ));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
@@ -25,8 +25,9 @@ app.get('/', function(req, res) {
 
 app.post('/website', function(req, res) {
   console.log("Creating website");
-  console.log(req.body.slogan);
-  res.render('website', { title: 'Company Name' });
+  res.render('website1', { name: req.body.company.name, 
+             slogan: req.body.company.slogan, 
+             industry: req.body.company.industry });
 });
 
 var port = 3000;
