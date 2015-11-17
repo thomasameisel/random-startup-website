@@ -1,6 +1,7 @@
 var express = require('express');
 var stylus = require('stylus');
 var nib = require('nib');
+var bodyParser = require('body-parser');
 
 var app = express();
 function compile(str, path) {
@@ -14,15 +15,17 @@ app.use(stylus.middleware(
     { src: __dirname + '/public', 
       compile: compile
     }
-))
+));
+app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-  res.render('form', { title: 'Random Startup Generator' });
+  res.render('form', { title: 'Startup Website Generator' });
 });
 
 app.post('/website', function(req, res) {
-  console.log("Creating website")
+  console.log("Creating website");
+  console.log(req.body.slogan);
   res.render('website', { title: 'Company Name' });
 });
 
