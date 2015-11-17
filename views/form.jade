@@ -1,7 +1,7 @@
 doctype
 html
   head
-    title #{title} - Startup Website Generator 
+    title #{title}
     link(rel='stylesheet', href='/stylesheets/form/style.css')
   body
     header
@@ -11,13 +11,13 @@ html
         form(action='/website', method='post')
           div
             label(for='name') Company Name:
-            input#name(type='text')
+            input(type='text', name='company[name]')
           div
-            label(for='slogn') Slogn:
-            input#slogn(type='text')
+            label(for='slogan') Slogan:
+            input(type='text', name='company[slogan]')
           div
-            label(for='msg') Industry:
-            input#industry(type='text')
+            label(for='industry') Industry:
+            input(type='text', name='company[industry]')
           div#images
             label(for='imgs') Images:
             div
@@ -33,6 +33,7 @@ html
               input(type='radio')
               label.image(for='image3')
                 img#image3(src='http://richthediabetic.com/wp-content/uploads/2013/07/Pizza.jpg')
+
           .button
             button(type='submit') Generate Website 
  
