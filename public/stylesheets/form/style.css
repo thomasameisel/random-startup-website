@@ -103,6 +103,20 @@ a img {
  * Store the main color and
  * background color as variables
  */
+img {
+  width: auto;
+  height: auto;
+  max-height: 300px;
+  max-width: 300px;
+  border: 1px solid #000;
+}
+#images {
+  width: 620px;
+}
+.imageBox {
+  margin: 0px;
+  display: inline-block;
+}
 body {
   font-family: 'Georgia';
   background-color: #faf9f0;
@@ -123,7 +137,7 @@ header {
   text-shadow: 0px -1px 0px #df1806;
 }
 .container {
-  width: 500px;
+  width: 700px;
   margin: 50px auto;
   overflow: hidden;
 }
