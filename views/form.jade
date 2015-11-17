@@ -17,7 +17,22 @@ html
             input#slogn(type='text')
           div
             label(for='msg') Industry:
-            input#industry(type='text') 
+            input#industry(type='text')
+          div#images
+            label(for='imgs') Images:
+            div
+            span.imageBox
+              input(type='radio')
+              label(for='image1')
+                img#image1(src='https://upload.wikimedia.org/wikipedia/commons/4/4d/Vanderbilt_Commodores.png')
+            span.imageBox
+              input(type='radio')
+              label.image(for='image2')
+                img#image2(src='http://theartmad.com/wp-content/uploads/2015/09/Ocean-Sunset-4.jpg')
+            span.imageBox
+              input(type='radio')
+              label.image(for='image3')
+                img#image3(src='http://richthediabetic.com/wp-content/uploads/2013/07/Pizza.jpg')
           .button
             button(type='submit') Generate Website 
  
