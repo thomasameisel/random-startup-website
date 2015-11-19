@@ -34,9 +34,11 @@ html
               input(type='radio', name='images', value='img3')
               label.image(for='img3')
                 img#image3(src='http://richthediabetic.com/wp-content/uploads/2013/07/Pizza.jpg')
-
+          div
+            label(for='year_founded') Year Founded:
+            input(type='number', name='company[year_founded]') 
           .button
             button(type='submit') Generate Website 
  
     footer
-      p Running on node with Express, Jade, and Stylus
+      p Running on Node with Express, Jade, and Stylus

@@ -3,6 +3,10 @@ var stylus = require('stylus');
 var nib = require('nib');
 var bodyParser = require('body-parser');
 
+function randomInt(low, high) {
+  return Math.floor(Math.random()*(high-low)+low);
+}
+
 var app = express();
 function compile(str, path) {
   return stylus(str)
@@ -25,9 +29,11 @@ app.get('/', function(req, res) {
 
 app.post('/website', function(req, res) {
   console.log("Creating website");
-  res.render('website1', { name: req.body.company.name, 
+  var website = 'website'+randomInt(1,5);
+  res.render(website, { name: req.body.company.name, 
              slogan: req.body.company.slogan, 
-             industry: req.body.company.industry });
+             industry: req.body.company.industry,
+             year_founded: req.body.company.year_founded });
 });
 
 var port = 3000;
