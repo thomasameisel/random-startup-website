@@ -29,11 +29,13 @@ app.get('/', function(req, res) {
 
 app.post('/website', function(req, res) {
   console.log("Creating website");
-  var website = 'website'+randomInt(1,5);
-  res.render(website, { name: req.body.company.name, 
+  //var website = 'website'+randomInt(1,5);
+
+  res.render('website1', { name: req.body.company.name,
              slogan: req.body.company.slogan, 
              industry: req.body.company.industry,
-             year_founded: req.body.company.year_founded });
+             year_founded: req.body.company.year_founded,
+             images: "/images/"+req.body.images});
 });
 
 var port = 3000;
