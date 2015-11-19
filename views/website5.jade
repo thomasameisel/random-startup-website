@@ -1,0 +1,44 @@
+doctype
+html
+  head
+    title #{name} 
+  body
+    header
+      h1
+        script(type="text/javascript").
+          function blink() {
+          var blinks = document.getElementsByTagName('blink');
+          for (var i = blinks.length - 1; i >= 0; i--) {
+          var s = blinks[i];
+          s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+          }
+          window.setTimeout(blink, 100);
+          }
+          if (document.addEventListener) document.addEventListener("DOMContentLoaded", blink, false);
+          else if (window.addEventListener) window.addEventListener("load", blink, false);
+          else if (window.attachEvent) window.attachEvent("onload", blink);
+          else window.onload = blink;
+        blink #{name} 
+    .container
+      .main-content
+        h2 About Us 
+          h3
+            ul
+              li #{about_us} 
+        h2 What We Do
+          h3 
+            ul
+              li #{what_we_do}
+              li #{slogan}
+        h2 Why Choose Us
+          h3
+            ul
+              li #{why_choose_us}
+        h2 Our history
+          h3
+            ul
+              li #{our_history}
+        h2 Careers
+          h3
+            ul
+              li #{careers}
