@@ -29,9 +29,9 @@ app.get('/', function(req, res) {
 
 app.post('/website', function(req, res) {
   console.log("Creating website");
-  //var website = 'website'+randomInt(1,5);
+  var website = 'website'+randomInt(1,5);
 
-  res.render('website1', { name: req.body.company.name,
+  res.render(website, { name: req.body.company.name,
              product: req.body.company.product,
              slogan: req.body.company.slogan, 
              industry: req.body.company.industry,

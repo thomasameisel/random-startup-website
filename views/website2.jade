@@ -47,7 +47,7 @@ html(lang='en')
       // /.container
     // Page Header
     // Set your background image for this header on the line below.
-    header.intro-header(style="background-image: url('/stylesheets/website2/img/post-bg.jpg')")
+    header.intro-header(style="background-image: url(" + "#{images}" + "/1.jpg"+ ")")
       .container
         .row
           .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
@@ -86,7 +86,7 @@ html(lang='en')
             p
               | As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.
             a(href='#')
-              img.img-responsive(src='/stylesheets/website2/img/post-sample-image.jpg', alt='')
+              img.img-responsive(src="#{images}" + "/3.jpg", alt='')
             span.caption.text-muted
               | To go places and do things that have never been done before ¨C that¡¯s what living is all about.
             p
