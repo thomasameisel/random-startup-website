@@ -2,7 +2,8 @@ doctype
 html
   head
     title #{title}
-    link(rel='stylesheet', href='/stylesheets/form/style.css')
+    link(rel='stylesheet', href='/public/stylesheets/form/style.css')
+    script(src='/public/stylesheets/website1/js/jquery-1.10.2.min.js', type='text/javascript')
   body
     header
       h1 Startup Website Generator 
@@ -22,16 +23,16 @@ html
             label(for='imgs') Images:
             div
             span.imageBox
-              input(type='radio')
-              label(for='image1')
+              input(type='radio', name='images', value='img1')
+              label(for='img1')
                 img#image1(src='https://upload.wikimedia.org/wikipedia/commons/4/4d/Vanderbilt_Commodores.png')
             span.imageBox
-              input(type='radio')
-              label.image(for='image2')
+              input(type='radio', name='images', value='img2')
+              label.image(for='img2')
                 img#image2(src='http://theartmad.com/wp-content/uploads/2015/09/Ocean-Sunset-4.jpg')
             span.imageBox
-              input(type='radio')
-              label.image(for='image3')
+              input(type='radio', name='images', value='img3')
+              label.image(for='img3')
                 img#image3(src='http://richthediabetic.com/wp-content/uploads/2013/07/Pizza.jpg')
 
           .button

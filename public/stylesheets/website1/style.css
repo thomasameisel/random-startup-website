@@ -38,7 +38,17 @@ h3 {
 	position: relative;
 }
 
-
+img{
+	margin-top: 0;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	width: auto;
+	height: auto;
+	max-height: 400px;
+	max-width: 800px;
+	border: black;
+}
 
 .center { margin: 0 auto; }
 .content{ margin: 0 auto; width: 960px; }
@@ -132,7 +142,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 #slide2{
 	background-color: #fff;
 	color: #333333;
-	height: 300px;
+	height: 600px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 200px 0;
@@ -149,13 +159,13 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 #slide4{
 	background-color: #fff;
 	color: #333333;
-	height: 300px;
+	height: 600px;
 	padding: 200px 0;
 }
 
 #slide5{
 	background-color: #999;
-	height: 200px;
+	height: 600px;
 	margin: 0 auto;
 	padding: 250px 0;
 	color: #fff;

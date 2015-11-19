@@ -3,8 +3,8 @@ html(lang='en')
   head
     meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
     title #{name} 
-    link(rel='stylesheet', href='/stylesheets/website1/style.css')
-    script(type='text/javascript', src='/stylesheets/website1/js/jquery-1.10.2.min.js')
+    link(rel='stylesheet', href='/public/stylesheets/website1/style.css')
+    script(type='text/javascript', src='/public/stylesheets/website1/js/jquery-1.10.2.min.js')
     link(href='http://fonts.googleapis.com/css?family=Wellfleet', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Wellfleet', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic', rel='stylesheet', type='text/css')
@@ -53,23 +53,29 @@ html(lang='en')
     // --- HEADER END-
     // --- SLIDES START -
     #slide1
+      img(src= "#{images}" + "/1.jpg")
       .content
         h1 About
         h1 Us
     #slide2
       .content
+        img(src= "#{images}" + "/2.jpg")
         .quotes_container
-          h3.quotes #{slogan} 
+          h3.quotes #{slogan}
+
     #slide3
       .content
+        img(src= "#{images}" + "/3.jpg")
         .quotes_container
           h3.quotes #{industry} 
     #slide4
       .content
+        img(src= "#{images}" + "/4.jpg")
         .quotes_container
           h3.quotes Our History
     #slide5
       .content
+        img(src= "#{images}" + "/5.jpg")
         .quotes_container
           h3.quotes Careers
     // --- SLIDES END -
