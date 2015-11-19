@@ -32,6 +32,7 @@ app.post('/website', function(req, res) {
   //var website = 'website'+randomInt(1,5);
 
   res.render('website1', { name: req.body.company.name,
+             product: req.body.company.product,
              slogan: req.body.company.slogan, 
              industry: req.body.company.industry,
              year_founded: req.body.company.year_founded,

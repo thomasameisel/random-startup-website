@@ -14,11 +14,17 @@ html
             label(for='name') Company Name:
             input(type='text', name='company[name]')
           div
+            label(for='product') Product:
+            input(type='text', name='company[product]')
+          div
             label(for='slogan') Slogan:
             input(type='text', name='company[slogan]')
           div
             label(for='industry') Industry:
             input(type='text', name='company[industry]')
+          div
+            label(for='year_founded') Year Founded:
+            input(type='number', name='company[year_founded]') 
           div#images
             label(for='imgs') Images:
             div
@@ -34,9 +40,6 @@ html
               input(type='radio', name='images', value='img3')
               label.image(for='img3')
                 img#image3(src='http://richthediabetic.com/wp-content/uploads/2013/07/Pizza.jpg')
-          div
-            label(for='year_founded') Year Founded:
-            input(type='number', name='company[year_founded]') 
           .button
             button(type='submit') Generate Website 
  

@@ -14,30 +14,30 @@ html(lang='en')
     script.
       <!----- JQUERY FOR SLIDING NAVIGATION --->
       $(document).ready(function() {
-      $('a[href*=#]').each(function() {
-      if (location.pathname.replace(/^\\//,'') == this.pathname.replace(/^\//,'')
-      && location.hostname == this.hostname
-      && this.hash.replace(/#/,'') ) {
-      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-      if ($target) {
-      var targetOffset = $target.offset().top;
-      <!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->
-      $(this).click(function() {
-      $("#nav li a").removeClass("active");
-      $(this).addClass('active');
-      $('html, body').animate({scrollTop: targetOffset}, 1000);
-      return false;
-      });
-      }
-      }
-      });
+        $('a[href*=#]').each(function() {
+          if (location.pathname.replace(/^\\//,'') == this.pathname.replace(/^\//,'')
+              && location.hostname == this.hostname
+              && this.hash.replace(/#/,'') ) {
+            var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+            var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+            if ($target) {
+              var targetOffset = $target.offset().top;
+              <!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->
+              $(this).click(function() {
+                $("#nav li a").removeClass("active");
+                $(this).addClass('active');
+                $('html, body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+              });
+            }
+          }
+        });
       });
   body
     header#header
       .content
         #logo
-          a(href='')  Company Name 
+          a(href='.') #{name} 
         nav#nav
           ul
             li
@@ -55,28 +55,27 @@ html(lang='en')
     #slide1
       img(src= "#{images}" + "/1.jpg")
       .content
-        h1 About
-        h1 Us
+        h3.quotes #{name} is unlike any other company. We are revolutionizing the #{industry} industry through innovative and cloud-intensive techniques.  
     #slide2
       .content
         img(src= "#{images}" + "/2.jpg")
         .quotes_container
-          h3.quotes #{slogan}
-
+          h3.quotes At #{name} we're creating an entirely new type of product in #{industry}. #{product} is created from the ground up with emphasis on ease of use and efficiency for the user.
+          h3.quotes #{slogan} 
     #slide3
       .content
         img(src= "#{images}" + "/3.jpg")
         .quotes_container
-          h3.quotes #{industry} 
+          h3.quotes We listen to the customer every step of the way. Customer happiness is our number 1 priority at #{name}, and it shows with the success of #{product}. 
     #slide4
       .content
         img(src= "#{images}" + "/4.jpg")
         .quotes_container
-          h3.quotes Our History
+        h3.quotes Since #{year_founded} we have been changing the way people live. John Johnson from TechNews said, "#{name} has always been a different type of company. Unlike anything I've seen before." 
     #slide5
       .content
         img(src= "#{images}" + "/5.jpg")
         .quotes_container
-          h3.quotes Careers
+        h3.quotes At #{name} we're different. We're breaking all the rules in #{industry} and also in software development. With our open offices and strict agile policy, software development at #{name} is unlike anywhere else. We invite you to join us and change the world. 
     // --- SLIDES END -
 
