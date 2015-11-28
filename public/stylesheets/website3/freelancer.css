@@ -256,6 +256,10 @@ section.success a.active {
 
 @media(min-width:767px) {
     #portfolio .portfolio-item {
+        height:auto;
+        width:auto;
+        max-height: 300px;
+        max-width: 300px;
         margin: 0 0 30px;
     }
 }
@@ -396,8 +400,11 @@ footer .footer-below {
 
 .portfolio-modal .modal-content {
     padding: 100px 0;
-    min-height: 100%;
     border: 0;
+    width: auto;
+    height: auto;
+    max-height: 100px;
+
     border-radius: 0;
     text-align: center;
     background-clip: border-box;
@@ -411,6 +418,10 @@ footer .footer-below {
 }
 
 .portfolio-modal .modal-content img {
+    width:auto;
+    height:auto;
+    max-height: 100px;
+    max-width: 100px;
     margin-bottom: 30px;
 }
 
