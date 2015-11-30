@@ -52,8 +52,8 @@ html(lang='en')
         .row
           .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
             .post-heading
-              h1 Man must explore, and this is exploration at its greatest
-              h2.subheading Problems look mighty small from 150 miles up
+              h1 #{name}
+              h2.subheading #{slogan}
               span.meta
                 | Posted by 
                 a(href='#') Start Bootstrap
@@ -63,14 +63,18 @@ html(lang='en')
       .container
         .row
           .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+            h2.section-heading What We Do
             p
-              | Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center ¡ª an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+              | #{what_we_do}
+              h2.section-heading Our History  
             p
-              | Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+              | #{our_history}
+              h2.section-heading Why Choose Us  
             p
-              | What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.
-            p
-              | A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.
+              | #{why_choose_us}
+              h2.section-heading Careers
+              p
+              | #{careers}
             p
               | For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.
             h2.section-heading The Final Frontier
@@ -128,3 +132,4 @@ html(lang='en')
     script(src='/stylesheets/website2/js/bootstrap.min.js')
     // Custom Theme JavaScript
     script(src='/stylesheets/website2/js/clean-blog.min.js')
+
