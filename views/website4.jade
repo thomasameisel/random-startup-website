@@ -42,10 +42,10 @@ html(lang='en')
     // Header
     header#top.header
       .text-vertical-center
-        h1 Start Bootstrap
-        h3 Free Bootstrap Themes & Templates
+        h1 #{name}
+        h3 #{slogan}
         br
-        a.btn.btn-dark.btn-lg(href='#about') Find Out More
+        a.btn.btn-dark.btn-lg(href='#about') Download This Website
     // About
     section#about.about
       .container
@@ -73,36 +73,32 @@ html(lang='en')
                     i.fa.fa-circle.fa-stack-2x
                     i.fa.fa-cloud.fa-stack-1x.text-primary
                   h4
-                    strong Service Name
-                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  a.btn.btn-light(href='#') Learn More
+                    strong About Us
+                  p #{about_us}
               .col-md-3.col-sm-6
                 .service-item
                   span.fa-stack.fa-4x
                     i.fa.fa-circle.fa-stack-2x
                     i.fa.fa-compass.fa-stack-1x.text-primary
                   h4
-                    strong Service Name
-                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  a.btn.btn-light(href='#') Learn More
+                    strong What We Do
+                  p #{what_we_do}
               .col-md-3.col-sm-6
                 .service-item
                   span.fa-stack.fa-4x
                     i.fa.fa-circle.fa-stack-2x
                     i.fa.fa-flask.fa-stack-1x.text-primary
                   h4
-                    strong Service Name
-                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  a.btn.btn-light(href='#') Learn More
+                    strong Why Choose Us
+                  p #{why_choose_us}
               .col-md-3.col-sm-6
                 .service-item
                   span.fa-stack.fa-4x
                     i.fa.fa-circle.fa-stack-2x
                     i.fa.fa-shield.fa-stack-1x.text-primary
                   h4
-                    strong Service Name
-                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  a.btn.btn-light(href='#') Learn More
+                    strong Our History
+                  p #{our_history}
             // /.row (nested)
           // /.col-lg-10
         // /.row
@@ -146,8 +142,8 @@ html(lang='en')
         .row
           .col-lg-12.text-center
             h3 The buttons below are impossible to resist.
-            a.btn.btn-lg.btn-light(href='#') Click Me!
-            a.btn.btn-lg.btn-dark(href='#') Look at Me!
+            a.btn.btn-lg.btn-light(href='#') Download Me!
+            a.btn.btn-lg.btn-dark(href='#') Download Me!
     // Map
     section#contact.map
       iframe(width='100%', height='100%', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&aq=0&oq=twitter&sll=28.659344,-81.187888&sspn=0.128789,0.264187&ie=UTF8&hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&t=m&z=15&iwloc=A&output=embed')
@@ -160,7 +156,7 @@ html(lang='en')
         .row
           .col-lg-10.col-lg-offset-1.text-center
             h4
-              strong Start Bootstrap
+              strong #{name}
             p
               | 3481 Melrose Place
               br
@@ -184,7 +180,7 @@ html(lang='en')
                 a(href='#')
                   i.fa.fa-dribbble.fa-fw.fa-3x
             hr.small
-            p.text-muted Copyright © Your Website 2014
+            p.text-muted Copyright © #{name} 2014
     // jQuery
     script(src='/stylesheets/website4/js/jquery.js')
     // Bootstrap Core JavaScript
