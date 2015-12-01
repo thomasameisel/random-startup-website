@@ -1,5 +1,5 @@
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+function getRandomInt(low, high) {
+    return Math.floor(Math.random()*(high-low+1))+low;
 }
 
 function createNode(data) {
@@ -21,6 +21,9 @@ function createNode(data) {
         } else {
           return undefined;
         }
+      },
+      hasChildren: function() {
+        return this.children.length > 0;
       }
   };
   return node;
