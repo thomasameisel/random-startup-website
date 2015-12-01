@@ -6,7 +6,7 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='description', content='')
     meta(name='author', content='')
-    title Stylish Portfolio - Start Bootstrap Theme
+    title #{name} 
     // Bootstrap Core CSS
     link(href='/stylesheets/website4/bootstrap.min.css', rel='stylesheet')
     // Custom CSS
@@ -20,44 +20,11 @@ html(lang='en')
       script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
       script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
   body
-    // Navigation
-    a#menu-toggle.btn.btn-dark.btn-lg.toggle(href='#')
-      i.fa.fa-bars
-    nav#sidebar-wrapper
-      ul.sidebar-nav
-        a#menu-close.btn.btn-light.btn-lg.pull-right.toggle(href='#')
-          i.fa.fa-times
-        li.sidebar-brand
-          a(href='#top', onclick='$("#menu-close").click();') Start Bootstrap
-        li
-          a(href='#top', onclick='$("#menu-close").click();') Home
-        li
-          a(href='#about', onclick='$("#menu-close").click();') About
-        li
-          a(href='#services', onclick='$("#menu-close").click();') Services
-        li
-          a(href='#portfolio', onclick='$("#menu-close").click();') Portfolio
-        li
-          a(href='#contact', onclick='$("#menu-close").click();') Contact
     // Header
     header#top.header
       .text-vertical-center
         h1 #{name}
         h3 #{slogan}
-        br
-        a.btn.btn-dark.btn-lg(href='#about') Download This Website
-    // About
-    section#about.about
-      .container
-        .row
-          .col-lg-12.text-center
-            h2 Stylish Portfolio is the perfect theme for your next project!
-            p.lead
-              | This theme features some wonderful photography courtesy of 
-              a(target='_blank', href='http://join.deathtothestockphoto.com/') Death to the Stock Photo
-              | .
-        // /.row
-      // /.container
     // Services
     // The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/
     section#services.services.bg-primary
@@ -131,25 +98,9 @@ html(lang='en')
                 .portfolio-item
                   a(href='#')
                     img.img-portfolio.img-responsive(src=images[3])
-            // /.row (nested)
-            a.btn.btn-dark(href='#') View More Items
           // /.col-lg-10
         // /.row
       // /.container
-    // Call to Action
-    aside.call-to-action.bg-primary
-      .container
-        .row
-          .col-lg-12.text-center
-            h3 The buttons below are impossible to resist.
-            a.btn.btn-lg.btn-light(href='#') Download Me!
-            a.btn.btn-lg.btn-dark(href='#') Download Me!
-    // Map
-    section#contact.map
-      iframe(width='100%', height='100%', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&aq=0&oq=twitter&sll=28.659344,-81.187888&sspn=0.128789,0.264187&ie=UTF8&hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&t=m&z=15&iwloc=A&output=embed')
-      br
-      small
-        a(href='https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&aq=0&oq=twitter&sll=28.659344,-81.187888&sspn=0.128789,0.264187&ie=UTF8&hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&t=m&z=15&iwloc=A')
     // Footer
     footer
       .container
@@ -180,7 +131,7 @@ html(lang='en')
                 a(href='#')
                   i.fa.fa-dribbble.fa-fw.fa-3x
             hr.small
-            p.text-muted Copyright © #{name} 2014
+            p.text-muted Copyright © #{name} 2015
     // jQuery
     script(src='/stylesheets/website4/js/jquery.js')
     // Bootstrap Core JavaScript

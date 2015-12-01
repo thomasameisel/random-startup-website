@@ -6,7 +6,7 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='description', content='')
     meta(name='author', content='')
-    title Freelancer - Start Bootstrap Theme
+    title #{name}
     // Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/
     link(href='/stylesheets/website3/bootstrap.min.css', rel='stylesheet')
     // Custom CSS
@@ -31,18 +31,18 @@ html(lang='en')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='#page-top') Start Bootstrap
+          a.navbar-brand(href='#page-top') #{name} 
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li.hidden
               a(href='#page-top')
             li.page-scroll
-              a(href='#portfolio') Portfolio
+              a(href='#our-work') Our Work 
             li.page-scroll
               a(href='#about') About
             li.page-scroll
-              a(href='#contact') Why Choose Us
+              a(href='#why-choose-us') Why Choose Us
         // /.navbar-collapse
       // /.container-fluid
     // Header
@@ -56,11 +56,11 @@ html(lang='en')
               hr.star-light
               span.skills #{slogan}
     // Portfolio Grid Section
-    section#portfolio
+    section#our-work
       .container
         .row
           .col-lg-12.text-center
-            h2 Portfolio
+            h2 Our Work 
             hr.star-primary
         .row
           .col-sm-4.portfolio-item
@@ -101,12 +101,8 @@ html(lang='en')
           .col-lg-4
             p
               | #{what_we_do}
-          .col-lg-8.col-lg-offset-2.text-center
-            a.btn.btn-lg.btn-outline(href='#')
-              i.fa.fa-download
-              |  Download Theme
     // Contact Section
-    section#contact
+    section#why-choose-us
       .container
         .row
           .col-lg-12.text-center
@@ -156,7 +152,7 @@ html(lang='en')
         .container
           .row
             .col-lg-12
-              | Copyright © #{name} 2014
+              | Copyright ? #{name} 2015
     // Scroll to Top Button (Only visible on small and extra-small screen sizes)
     .scroll-top.page-scroll.visible-xs.visible-sm
       a.btn.btn-primary(href='#page-top')

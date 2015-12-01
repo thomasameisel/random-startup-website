@@ -47,7 +47,8 @@ app.get('/', function(req, res) {
 
 app.post('/website', function(req, res) {
   console.log("Creating website");
-  var website = 'website'+randomInt(1,5);
+  //var website = 'website'+randomInt(1,5);
+  var website = 'website3';
 
   var about_us = util.format("%s is unlike any other company. We are revolutionizing the %s industry through innovative and cloud-intensive techniques.", req.body.company.name, req.body.company.industry);
   var what_we_do = util.format("At %s we're creating an entirely new type of product in %s. %s is creating from the ground up with emphasis on ease of use and efficiency for the user.", req.body.company.name, req.body.company.industry, req.body.company.product);
