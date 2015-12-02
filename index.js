@@ -3,6 +3,7 @@ var stylus = require('stylus');
 var nib = require('nib');
 var bodyParser = require('body-parser');
 var util = require('util');
+var generate_sentences = require('./generate_sentences.js')
 
 function randomInt(low, high) {
   return Math.floor(Math.random()*(high-low+1))+low;
@@ -46,15 +47,15 @@ app.get('/', function(req, res) {
 });
 
 app.post('/website', function(req, res) {
-  console.log("Creating website");
-  var website = 'website'+randomInt(1,5);
-  //var website = 'website3';
 
-  var about_us = util.format("%s is unlike any other company. We are revolutionizing the %s industry through innovative and cloud-intensive techniques.", req.body.company.name, req.body.company.industry);
-  var what_we_do = util.format("At %s we're creating an entirely new type of product in %s. %s is creating from the ground up with emphasis on ease of use and efficiency for the user.", req.body.company.name, req.body.company.industry, req.body.company.product);
-  var why_choose_us = util.format("We listen to the customer every step of the way. Customer happiness is our number 1 priority at %s, and it shows with the success of %s", req.body.company.name, req.body.company.product);
-  var our_history = util.format("Since %d we have been changing the way people live. John Johnson from TechNews said, \"%s has always been a different type of company. Unlike anything I've seen before.\"", req.body.company.year_founded, req.body.company.name);
-  var careers = util.format("At %s we're different. We're breaking all the rules in %s and also in software development. With our open offices and strict agile policy, software development at %s is unlike anywhere else. We invite you to join us and change the world.", req.body.company.name, req.body.company.industry, req.body.company.name);
+  var website = 'website'+randomInt(1,5);
+  console.log('Creating '+website);
+
+  var about_us = generate_sentences.generateAboutUs(req.body.company.name, req.body.company.industry);
+  var what_we_do = generate_sentences.generateWhatWeDo(req.body.company.name, req.body.company.product);
+  var why_choose_us = generate_sentences.generateWhyChooseUs(req.body.company.name, req.body.company.product);
+  var our_history = generate_sentences.generateOurHistory(req.body.company.name, req.body.company.industry, req.body.company.year_founded);
+  var careers = generate_sentences.generateCareers(req.body.company.name, req.body.company.industry);
   var images = getImages("/images/"+req.body.images, [], 0);
 
   res.render(website, { name: req.body.company.name,
