@@ -46,8 +46,11 @@ app.get('/', function(req, res) {
   res.render('form', { title: 'Startup Website Generator' });
 });
 
-app.post('/website', function(req, res) {
+app.get('/website', function(req, res) {
+  res.redirect('/');
+});
 
+app.post('/website', function(req, res) {
   var website = 'website'+randomInt(1,5);
   console.log('Creating '+website);
 
