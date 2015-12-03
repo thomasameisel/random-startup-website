@@ -12,24 +12,24 @@ html
         form(action='/website', method='post')
           div
             label(for='name') Company Name:
-            input(type='text', name='company[name]')
+            input(type='text', name='company[name]', required='')
           div
             label(for='product') Product:
-            input(type='text', name='company[product]')
+            input(type='text', name='company[product]', required='')
           div
             label(for='slogan') Slogan:
-            input(type='text', name='company[slogan]')
+            input(type='text', name='company[slogan]', required='')
           div
             label(for='industry') Industry:
-            input(type='text', name='company[industry]')
+            input(type='text', name='company[industry]', required='')
           div
             label(for='year_founded') Year Founded:
-            input(type='number', name='company[year_founded]') 
+            input(type='number', name='company[year_founded]', required='') 
           div#images
             label(for='imgs') Images:
             div
             span.imageBox
-              input(type='radio', name='images', value='img1')
+              input(type='radio', name='images', value='img1', required='')
               label(for='img1')
                 img#image1(src='https://upload.wikimedia.org/wikipedia/commons/4/4d/Vanderbilt_Commodores.png')
             span.imageBox

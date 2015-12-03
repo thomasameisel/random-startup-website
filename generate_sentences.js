@@ -87,7 +87,7 @@ function generateWhatWeDo(name,product) {
         'one that does not cut corners and never includes underdeveloped features.',
         'while keeping a constant eye on our community and what we can do to help make our community better.',
         'and we always make sure that our customers are satisfied with '+capitalizeFirstLetter(product)+'.',
-        'and since we are small company we are able to easily pivot for our customers\' needs'
+        'and since we are small company we are able to easily pivot for our customers\' needs.'
       ]
     }
   ];
@@ -100,7 +100,7 @@ function generateWhyChooseUs(name,product) {
   var beginPhrases = [
     'We listen to our customers every step of the way. ',
     'Our customers are the most important part of our business. ',
-    'At '+capitalizeFirstLetter(name)+' we are always able to meet our customers\' requests'
+    'At '+capitalizeFirstLetter(name)+' we are always able to meet our customers\' requests. '
   ];
   var endPhrases = [
     {
@@ -175,7 +175,7 @@ function generateCareers(name,industry) {
       second: [
         'software development at'+capitalizeFirstLetter(name)+' is unlike anywhere else. Come join us.',
         'we barely have the room for our 23 ping pong tables.',
-        'our employees barely even work!'
+        'our employees even get to choose which 12 hours of the day they want to work!'
       ]
     }
   ];
