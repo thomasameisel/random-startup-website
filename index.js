@@ -10,7 +10,7 @@ function randomInt(low, high) {
 }
 
 function getImages(path, arr, index){
-    if(index === 5){
+    if(index === 7){
         return arr;
     }
     else{

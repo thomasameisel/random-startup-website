@@ -8,7 +8,7 @@ html(lang='en')
     meta(name='author', content='')
     title #{name}
     // Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/
-    link(href='/stylesheets/website3/bootstrap.min.css', rel='stylesheet')
+    link(href='/stylesheets/website3/bootstrap.css', rel='stylesheet')
     // Custom CSS
     link(href='/stylesheets/website3/freelancer.css', rel='stylesheet')
     // Custom Fonts
@@ -87,6 +87,19 @@ html(lang='en')
                 .caption-content
                   i.fa.fa-search-plus.fa-3x
               img.img-responsive(src=images[4], alt='')
+          .col-sm-4.portfolio-item
+            a.portfolio-link(href='#portfolioModal5', data-toggle='modal')
+              .caption
+                .caption-content
+                  i.fa.fa-search-plus.fa-3x
+              img.img-responsive(src=images[5], alt='')
+          .col-sm-4.portfolio-item
+            a.portfolio-link(href='#portfolioModal6', data-toggle='modal')
+              .caption
+                .caption-content
+                  i.fa.fa-search-plus.fa-3x
+              img.img-responsive(src=images[6], alt='')
+
     // About Section
     section#about.success
       .container
@@ -169,7 +182,7 @@ html(lang='en')
               .modal-body
                 h2 Project Title
                 hr.star-primary
-                img.img-responsive.img-centered(src='/stylesheets/website3/img/portfolio/cabin.png', alt='')
+                img.img-responsive.img-centered(src=images[1], alt='')
                 p
                   | Use this area of the page to describe your project. The icon above is part of a free icon set by 
                   a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
@@ -201,7 +214,7 @@ html(lang='en')
               .modal-body
                 h2 Project Title
                 hr.star-primary
-                img.img-responsive.img-centered(src='/stylesheets/website3/img/portfolio/cake.png', alt='')
+                img.img-responsive.img-centered(src=images[2], alt='')
                 p
                   | Use this area of the page to describe your project. The icon above is part of a free icon set by 
                   a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
@@ -233,7 +246,7 @@ html(lang='en')
               .modal-body
                 h2 Project Title
                 hr.star-primary
-                img.img-responsive.img-centered(src='img/portfolio/circus.png', alt='')
+                img.img-responsive.img-centered(src=images[3], alt='')
                 p
                   | Use this area of the page to describe your project. The icon above is part of a free icon set by 
                   a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
@@ -265,7 +278,7 @@ html(lang='en')
               .modal-body
                 h2 Project Title
                 hr.star-primary
-                img.img-responsive.img-centered(src='img/portfolio/game.png', alt='')
+                img.img-responsive.img-centered(src=images[4], alt='')
                 p
                   | Use this area of the page to describe your project. The icon above is part of a free icon set by 
                   a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
@@ -297,7 +310,7 @@ html(lang='en')
               .modal-body
                 h2 Project Title
                 hr.star-primary
-                img.img-responsive.img-centered(src='img/portfolio/safe.png', alt='')
+                img.img-responsive.img-centered(src=images[5], alt='')
                 p
                   | Use this area of the page to describe your project. The icon above is part of a free icon set by 
                   a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
@@ -329,7 +342,7 @@ html(lang='en')
               .modal-body
                 h2 Project Title
                 hr.star-primary
-                img.img-responsive.img-centered(src='img/portfolio/submarine.png', alt='')
+                img.img-responsive.img-centered(src=images[6], alt='')
                 p
                   | Use this area of the page to describe your project. The icon above is part of a free icon set by 
                   a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons

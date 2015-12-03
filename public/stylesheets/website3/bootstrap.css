@@ -227,7 +227,10 @@ th {
     page-break-inside: avoid;
   }
   img {
-    max-width: 100% !important;
+    height: auto;
+    width: auto;
+    max-height: 200px;
+    max-width: 400px !important;
   }
   p,
   h2,
@@ -1116,6 +1119,7 @@ figure {
 }
 img {
   vertical-align: middle;
+
 }
 .img-responsive,
 .thumbnail > img,
@@ -1123,8 +1127,10 @@ img {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  max-width: 100%;
   height: auto;
+  width: auto;
+  max-height: 200px;
+  max-width: 350px;
 }
 .img-rounded {
   border-radius: 6px;
