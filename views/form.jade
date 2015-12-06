@@ -1,51 +1,52 @@
-doctype
 html
-  head#head
-    title #{title}
+  head
+    title Startup Website Generator
+    link(rel='stylesheet', href='//fonts.googleapis.com/icon?family=Material+Icons')
     link(rel='stylesheet', href='stylesheets/form/style.css')
-    script(src='stylesheets/website1/js/jquery-1.10.2.min.js', type='text/javascript')
+    link(href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='//storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css')
+    script(src='//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js')
   body
-    header
-      h1 Startup Website Generator 
-    .container
-      .main-content
+    .mdl-layout.mdl-js-layout.mdl-color--grey-100
+      main.mdl-layout__content
+        header
+          h1 Startup Website Generator
         form(action='/website', method='post')
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            label.mdl-textfield__label(for='name') Company Name
+            input.mdl-textfield__input(type='text', name='company[name]', required='')
+          br
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            label.mdl-textfield__label(for='product') Company Product
+            input.mdl-textfield__input(type='text', name='company[product]', required='')
+          br
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            label.mdl-textfield__label(for='slogan') Company Slogan
+            input.mdl-textfield__input(type='text', name='company[slogan]' required='')
+          br
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            label.mdl-textfield__label(for='industry') Company Industry
+            input.mdl-textfield__input(type='text', name='company[industry]', required='')
+          br
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            label.mdl-textfield__label(for='year_founded') Year Founded
+            input.mdl-textfield__input(type='number', name='company[year_founded]', required='')
+          br
           div
-            label(for='name') Company Name:
-            input(type='text', name='company[name]', required='')
-          div
-            label(for='product') Product:
-            input(type='text', name='company[product]', required='')
-          div
-            label(for='slogan') Slogan:
-            input(type='text', name='company[slogan]', required='')
-          div
-            label(for='industry') Industry:
-            input(type='text', name='company[industry]', required='')
-          div
-            label(for='year_founded') Year Founded:
-            input(type='number', name='company[year_founded]', required='') 
-          div#images
-            label(for='imgs') Images:
-            div
-            span.imageBox
-              input(type='radio', name='images', value='img1', required='')
-              label(for='img1')
-                img#image1(src='https://upload.wikimedia.org/wikipedia/commons/4/4d/Vanderbilt_Commodores.png')
-            span.imageBox
-              input(type='radio', name='images', value='img2')
-              label.image(for='img2')
-                img#image2(src='http://theartmad.com/wp-content/uploads/2015/09/Ocean-Sunset-4.jpg')
-            span.imageBox
-              input(type='radio', name='images', value='img3')
-              label.image(for='img3')
-                img#image3(src='http://richthediabetic.com/wp-content/uploads/2013/07/Pizza.jpg')
-            span.imageBox
-              input(type='radio', name='images', value='img4')
-              label.image(for='img4')
-                img#image3(src='http://previews.123rf.com/images/wavebreakmediamicro/wavebreakmediamicro1108/wavebreakmediamicro110847705/10248106-Multi-ethnic-business-people-greeting-each-other-Stock-Photo-marketing.jpg')
-          .button
-            button(type='submit') Generate Website 
- 
-    footer
-      p Running on Node with Express, Jade, and Stylus
+            font(size='4') Choose a picture
+          br
+          input#vanderbilt.input-hidden(type='radio', name='images', value='img1', required='')
+          label(for='vanderbilt')
+            img(src='//upload.wikimedia.org/wikipedia/commons/4/4d/Vanderbilt_Commodores.png', alt="Vanderbilt")
+          input#ocean.input-hidden(type='radio', name='images', value='img2')
+          label(for='ocean')
+            img(src='//theartmad.com/wp-content/uploads/2015/09/Ocean-Sunset-4.jpg', alt="Ocean")
+          input#pizza.input-hidden(type='radio', name='images', value='img3')
+          label(for='pizza')
+            img(src='//richthediabetic.com/wp-content/uploads/2013/07/Pizza.jpg', alt="Pizza")
+          input#business.input-hidden(type='radio', name='images', value='img4')
+          label(for='business')
+            img(src='//previews.123rf.com/images/wavebreakmediamicro/wavebreakmediamicro1108/wavebreakmediamicro110847705/10248106-Multi-ethnic-business-people-greeting-each-other-Stock-Photo-marketing.jpg', alt="Business")
+          br
+          br
+          button.mdl-button.mdl-button--raised(type='submit') Generate Website
