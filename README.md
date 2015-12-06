@@ -15,3 +15,10 @@
 
 Used http://www.1stwebdesigner.com/create-scrolling-parallax-website/ as
 a template for creating the website. 
+
+#Running Tests
+
+  The project uses nightwatch.js to test browser automation. It currently runs tests on the Chrome browser.
+  If you need to run on Firefox or IE consult this developer guide: http://nightwatchjs.org/guide#test-runner
+  
+  Change your directory to the test folder and run "nightwatch" in the command line to run the tests.
