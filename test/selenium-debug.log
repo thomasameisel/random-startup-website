@@ -1,0 +1,32 @@
+19:23:50.965 INFO - Launching a standalone Selenium Server
+Setting system property webdriver.chrome.driver to chromedriver.exe
+19:23:51.743 INFO - Java: Oracle Corporation 24.79-b02
+19:23:51.743 INFO - OS: Windows 8.1 6.3 amd64
+19:23:51.753 INFO - v2.48.0, with Core v2.48.0. Built from revision 41bccdd
+19:23:51.817 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+19:23:51.817 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+19:23:52.650 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+19:23:52.650 INFO - Selenium Server is up and running
+19:23:52.951 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Test1}]])
+19:23:52.964 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Test1}]
+Starting ChromeDriver 2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067) on port 35187
+Only local connections are allowed.
+19:23:55.166 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Test1}]]
+19:23:55.183 INFO - Executing: [get: localhost:3000])
+19:23:58.915 INFO - Done: [get: localhost:3000]
+19:23:58.930 INFO - Executing: [find elements: By.cssSelector: body])
+19:23:58.975 INFO - Done: [find elements: By.cssSelector: body]
+19:23:58.979 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on WIN8_1 (0ea350f3c467862fd9caf1c7af12e4e4)] -> css selector: body]])
+19:23:58.992 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on WIN8_1 (0ea350f3c467862fd9caf1c7af12e4e4)] -> css selector: body]]
+19:23:59.002 INFO - Executing: [find element: By.cssSelector: footer])
+19:23:59.017 INFO - Done: [find element: By.cssSelector: footer]
+19:23:59.021 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on WIN8_1 (0ea350f3c467862fd9caf1c7af12e4e4)] -> css selector: footer]])
+19:23:59.045 INFO - Done: [get text: 1 [[ChromeDriver: chrome on WIN8_1 (0ea350f3c467862fd9caf1c7af12e4e4)] -> css selector: footer]]
+19:23:59.050 INFO - Executing: [find element: By.cssSelector: header])
+19:23:59.066 INFO - Done: [find element: By.cssSelector: header]
+19:23:59.069 INFO - Executing: [get text: 2 [[ChromeDriver: chrome on WIN8_1 (0ea350f3c467862fd9caf1c7af12e4e4)] -> css selector: header]])
+19:23:59.089 INFO - Done: [get text: 2 [[ChromeDriver: chrome on WIN8_1 (0ea350f3c467862fd9caf1c7af12e4e4)] -> css selector: header]]
+19:23:59.094 INFO - Executing: [find elements: By.cssSelector: #images])
+19:23:59.111 INFO - Done: [find elements: By.cssSelector: #images]
+19:23:59.116 INFO - Executing: [delete session: 322e2479-f27a-4ca9-a03a-3f01cf374984])
+19:24:00.536 INFO - Done: [delete session: 322e2479-f27a-4ca9-a03a-3f01cf374984]

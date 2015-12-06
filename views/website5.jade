@@ -18,7 +18,8 @@ html
           else if (window.addEventListener) window.addEventListener("load", blink, false);
           else if (window.attachEvent) window.attachEvent("onload", blink);
           else window.onload = blink;
-        blink #{name} 
+        blink #{name}
+        audio(src='/music/good_enough.mp3', controls='')
     .container
       .main-content
         h2 About Us 
@@ -42,3 +43,4 @@ html
           h3
             ul
               li #{careers}
+
