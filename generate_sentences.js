@@ -189,5 +189,9 @@ module.exports = {
   generateWhatWeDo: generateWhatWeDo,
   generateWhyChooseUs: generateWhyChooseUs,
   generateOurHistory: generateOurHistory,
-  generateCareers: generateCareers
+  generateCareers: generateCareers,
+  capitalizeFirstLetter: capitalizeFirstLetter,
+  lowercaseFirstLetter: lowerCaseFirstLetter,
+  createTree: createTree,
+  createSentence: createSentence
 };
