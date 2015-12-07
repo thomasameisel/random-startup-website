@@ -3,7 +3,7 @@
  */
 
 module.exports = {
-    //'@disabled': true,
+    '@disabled': true,
     'Should not submit form test' : function(browser) {
         //URL should always be http://localhost:3000/
         browser.url('localhost:3000');
