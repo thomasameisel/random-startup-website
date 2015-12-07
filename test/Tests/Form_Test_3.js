@@ -3,6 +3,7 @@
  */
 
 module.exports = {
+    //'@disabled': true,
     'Should correctly submit form' : function(browser) {
         browser.url('localhost:3000');
         browser.waitForElementVisible('#name', 2000);
