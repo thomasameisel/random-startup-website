@@ -3,7 +3,7 @@
  */
 
 module.exports = {
-    '@disabled':true,
+    //'@disabled':true,
     "Form page and radio buttons test" : function (browser) {
         browser.url('localhost:3000');
         browser.waitForElementVisible('body',2000);

@@ -21,4 +21,12 @@ a template for creating the website.
   The project uses nightwatch.js to test browser automation. It currently runs tests on the Chrome browser.
   If you need to run on Firefox or IE consult this developer guide: http://nightwatchjs.org/guide#test-runner
   
-  Change your directory to the test folder and run "nightwatch" in the command line to run the tests.
+  Change your directory to the test folder and run "nightwatch" in the command line to run the browser tests.
+  
+  The project also uses mocha to test mainly the sentence generation files. Run mocha mocha_tests.js in in the 
+  command line to run these tests (in the test folder). 
+  
+###Note
+  
+  There is a simple test for randomness that calls getRandomChild() 100 times. This test will fail occasionally due
+  to pure chance, but should pass most of the time.
