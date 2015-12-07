@@ -14,23 +14,23 @@ html
         form(action='/website', method='post')
           .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
             label.mdl-textfield__label(for='name') Company Name
-            input.mdl-textfield__input(type='text', name='company[name]', required='')
+            input#name.mdl-textfield__input(type='text', name='company[name]', required='')
           br
           .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
             label.mdl-textfield__label(for='product') Company Product
-            input.mdl-textfield__input(type='text', name='company[product]', required='')
+            input#product.mdl-textfield__input(type='text', name='company[product]', required='')
           br
           .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
             label.mdl-textfield__label(for='slogan') Company Slogan
-            input.mdl-textfield__input(type='text', name='company[slogan]' required='')
+            input#slogan.mdl-textfield__input(type='text', name='company[slogan]' required='')
           br
           .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
             label.mdl-textfield__label(for='industry') Company Industry
-            input.mdl-textfield__input(type='text', name='company[industry]', required='')
+            input#industry.mdl-textfield__input(type='text', name='company[industry]', required='')
           br
           .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
             label.mdl-textfield__label(for='year_founded') Year Founded
-            input.mdl-textfield__input(type='number', name='company[year_founded]', required='')
+            input#number.mdl-textfield__input(type='number', name='company[year_founded]', required='')
           br
           div#images
             font(size='4') Choose a picture
