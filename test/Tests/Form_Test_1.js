@@ -3,7 +3,7 @@
  */
 
 module.exports = {
-    //'@disabled':true,
+    '@disabled':true,
     "Form page and radio buttons test" : function (browser) {
         browser.url('localhost:3000');
         browser.waitForElementVisible('body',2000);
@@ -15,9 +15,9 @@ module.exports = {
         browser.expect.element('#vanderbilt').to.be.selected
         browser.click('#oceanImage');
         browser.expect.element('#ocean').to.be.selected;
-        browser.expect.element('#vanderbilt').to.not.be.selected
-        browser.expect.element('#pizza').to.not.be.selected
-        browser.expect.element('#business').to.not.be.selected
+        browser.expect.element('#vanderbilt').to.not.be.selected;
+        browser.expect.element('#pizza').to.not.be.selected;
+        browser.expect.element('#business').to.not.be.selected;
         browser.end();
     }
 };
