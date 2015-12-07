@@ -10,11 +10,12 @@
   "author": "Tommy Meisel",
   "license": "Apache 2",
   "dependencies": {
+    "body-parser": "~1.14.1",
     "express": "4.2.x",
-    "stylus": "0.52.4",
     "jade": "1.11.0",
+    "jszip": "^2.5.0",
     "nib": "1.1.0",
     "body-parser": "~1.14.1",
-    "chai": "~3.4.1"
+    "chai": "~3.4.1",
   }
 }

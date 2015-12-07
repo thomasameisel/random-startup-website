@@ -29,6 +29,13 @@ body {
     font-weight: 700;
 }
 
+#download{
+    position:fixed;
+    right:0;
+    bottom:0;
+}
+
+
 /* Custom Button Styles */
 
 .btn-dark {
