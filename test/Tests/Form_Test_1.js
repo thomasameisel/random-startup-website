@@ -6,6 +6,7 @@ module.exports = {
     //'@disabled':true,
     "Form page and radio buttons test" : function (browser) {
         browser.url('localhost:3000');
+        //tests to see if more than one image is selected
         browser.waitForElementVisible('body',2000);
         browser.assert.containsText('header', 'Startup Website Generator');
         browser.assert.elementPresent('#images');

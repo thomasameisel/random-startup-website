@@ -6,6 +6,7 @@ module.exports = {
     //'@disabled': true,
     'Should not submit form test' : function(browser) {
         //URL should always be http://localhost:3000/
+        //various cases of incomplete forms where the URL should not change
         browser.url('localhost:3000');
         browser.waitForElementVisible('#name', 2000);
         browser.assert.containsText('#name', '');

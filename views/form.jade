@@ -6,6 +6,27 @@ html
     link(href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic', rel='stylesheet', type='text/css')
     link(rel='stylesheet', href='//storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css')
     script(src='//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js')
+    script(type='text/javascript', src='stylesheets/website1/js/jquery-1.10.2.min.js')
+    script.
+      $(document).ready(function() {
+        var secret = "38384040373937396665";
+        var input = "";
+        var timer;
+        var mode = false;
+        $(document).keyup(function (e) {
+          input += e.which;
+          clearTimeout(timer);
+          timer = setTimeout(function () {
+            input = "";
+            }, 2000);
+            if (input == secret) {
+              //the secret code
+              console.log("hi" + input);
+              alert('D E V E L O P E R M O D E');
+              $("#konami").removeClass("hidden");
+            }
+          });
+      });
   body
     .mdl-layout.mdl-js-layout.mdl-color--grey-100
       main.mdl-layout__content
@@ -49,4 +70,6 @@ html
             img#businessImage(src='//previews.123rf.com/images/wavebreakmediamicro/wavebreakmediamicro1108/wavebreakmediamicro110847705/10248106-Multi-ethnic-business-people-greeting-each-other-Stock-Photo-marketing.jpg', alt="Business")
           br
           br
+          div#konami.hidden
+            input#websiteNumber(name='websiteNumber')
           button.mdl-button.mdl-button--raised(type='submit') Generate Website

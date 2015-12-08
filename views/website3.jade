@@ -1,6 +1,6 @@
 doctype html
 html(lang='en')
-  head
+  head#3
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
@@ -54,7 +54,7 @@ html(lang='en')
             .intro-text
               span.name #{name}
               hr.star-light
-              span.skills #{slogan}
+              span#slogan.skills #{slogan}
     // Portfolio Grid Section
     section#our-work
       .container
@@ -109,10 +109,10 @@ html(lang='en')
             hr.star-light
         .row
           .col-lg-4.col-lg-offset-2
-            p
+            p#aboutUs
               | #{about_us}
           .col-lg-4
-            p
+            p#whatWeDo
               | #{what_we_do}
     // Contact Section
     section#why-choose-us
@@ -123,10 +123,10 @@ html(lang='en')
             hr.star-primary
         .row
           .col-lg-4.col-lg-offset-2
-            p
+            p#whyChooseUs
               | #{why_choose_us}
           .col-lg-4
-            p
+            p#careers
               | #{careers}
     // Footer
     footer.text-center
@@ -135,7 +135,7 @@ html(lang='en')
           .row
             .col-md-4.col-md-offset-4
               h3 History 
-              p
+              p#ourHistory
                 | #{our_history}
       .footer-below
         .container

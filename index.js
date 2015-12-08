@@ -42,9 +42,13 @@ app.get('/website', function(req, res) {
 });
 
 app.post('/website', function(req, res) {
-  var website = 'website'+randomInt(1,5);
-  console.log('Creating '+website);
-
+  var website;
+  if (req.body.websiteNumber != 0) {
+    website = 'website' + req.body.websiteNumber;
+  } else {
+    website = 'website' + randomInt(1, 5);
+  }
+  console.log('Creating ' + website);
   var about_us = generate_sentences.generateAboutUs(req.body.company.name, req.body.company.industry);
   var what_we_do = generate_sentences.generateWhatWeDo(req.body.company.name, req.body.company.product);
   var why_choose_us = generate_sentences.generateWhyChooseUs(req.body.company.name, req.body.company.product);
@@ -65,7 +69,6 @@ app.post('/website', function(req, res) {
              images: images});
              //images: "/images/"+req.body.images});
 });
-
 
 var port = 3000;
 app.listen(port, function(req, res) {

@@ -1,6 +1,6 @@
 doctype html
 html(lang='en')
-  head
+  head#2
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
@@ -28,26 +28,26 @@ html(lang='en')
           .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
             .post-heading
               h1 #{name}
-              h2.subheading #{slogan}
+              h2#slogan.subheading #{slogan}
     // Post Content
     article
       .container
         .row
           .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
             h2.section-heading About Us
-            p
+            p#aboutUs
               | #{about_us}
             h2.section-heading What We Do
-            p
+            p#whatWeDo
               | #{what_we_do}
             h2.section-heading Why Choose Us
-            p
+            p#whyChooseUs
               | #{why_choose_us}
             h2.section-heading Our History
-            p
+            p#ourHistory
               | #{our_history}
             h2.section-heading Careers
-            p
+            p#careers
               | #{careers}
     hr
     // Footer

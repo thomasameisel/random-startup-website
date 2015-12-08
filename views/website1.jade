@@ -1,6 +1,6 @@
 doctype html
 html(lang='en')
-  head
+  head#1
     meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
     title #{name} 
     link(rel='stylesheet', href='stylesheets/website1/style.css')
@@ -56,27 +56,27 @@ html(lang='en')
       img(src= images[0])
       .content
         .quotes_container
-          h3.quotes #{about_us}
+          h3#aboutUs.quotes #{about_us}
     #slide2
       .content
         img(src= images[1])
         .quotes_container
-          h3.quotes #{what_we_do}
-          h3.quotes #{slogan}
+          h3#whatWeDo.quotes #{what_we_do}
+          h3#slogan.quotes #{slogan}
     #slide3
       .content
         img(src= images[2])
         .quotes_container
-          h3.quotes #{why_choose_us}
+          h3#whyChooseUs.quotes #{why_choose_us}
     #slide4
       .content
         img(src= images[3])
         .quotes_container
-          h3.quotes #{our_history}
+          h3#ourHistory.quotes #{our_history}
     #slide5
       .content
         img(src= images[4])
         .quotes_container
-          h3.quotes #{careers}
+          h3#careers.quotes #{careers}
     // --- SLIDES END -
 
