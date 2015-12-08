@@ -11,11 +11,11 @@
   "license": "Apache 2",
   "dependencies": {
     "body-parser": "~1.14.1",
+    "chai": "~3.4.1",
     "express": "4.2.x",
     "jade": "1.11.0",
-    "jszip": "^2.5.0",
+    "mocha": "^2.3.4",
     "nib": "1.1.0",
-    "body-parser": "~1.14.1",
-    "chai": "~3.4.1",
+    "nightwatch": "^0.8.8"
   }
 }
