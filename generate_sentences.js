@@ -161,7 +161,7 @@ function generateWhyChooseUs(name,product) {
   return createSentence(root);
 }
 
-function generateOurHistory(name,industry,year_founded) {
+function generateOurHistory(name,industry,year_founded,product) {
   var beginPhrases = [
     'Since '+year_founded+' we have been changing the way people live. ',
     capitalizeFirstLetter(name)+' was founded in '+year_founded+' with the goal to disrupt the '+lowerCaseFirstLetter(industry)+' industry. ',
