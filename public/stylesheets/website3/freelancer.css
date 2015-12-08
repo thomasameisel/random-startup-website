@@ -123,11 +123,6 @@ header .intro-text .skills {
     }
 }
 
-#download{
-    position:fixed;
-    right:0;
-    bottom:0;
-}
 
 @media(min-width:768px) {
     .navbar-fixed-top {

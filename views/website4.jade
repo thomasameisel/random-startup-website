@@ -6,8 +6,6 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='description', content='')
     meta(name='author', content='')
-    script(type="text/javascript", src="https://raw.github.com/Stuk/jszip/master/jszip.js")
-    script(type="text/javascript", src="js/download.js")
     title #{name} 
     // Bootstrap Core CSS
     link(href='/stylesheets/website4/bootstrap.css', rel='stylesheet')
@@ -112,8 +110,7 @@ html(lang='en')
               strong #{name}
             hr.small
             p.text-muted Copyright #{name} 2015
-    .button
-      button#download(onclick='download("website4")') Download Website
+
     // jQuery
     script(src='/stylesheets/website4/js/jquery.js')
     // Bootstrap Core JavaScript

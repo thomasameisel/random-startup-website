@@ -88,11 +88,6 @@ a.rpanel:hover{ color: #fff; }
 #nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; font-family: 'Hind'; }
 #nav li a:hover { color: #fff; opacity:1;  }
 
-#download{
-	position:fixed;
-	right:0;
-	bottom:0;
-}
 
 
 
