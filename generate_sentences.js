@@ -8,6 +8,14 @@ function lowerCaseFirstLetter(string) {
   return string.charAt(0).toLowerCase() + string.slice(1);
 }
 
+/*creates a tree with 4 levels
+* phrases is an array with 2 elements
+*  first element is an array of short sentences
+*  second element is an array of objects
+*    each object has two members
+*      member 'first' is a string phrase that can be combined with any phrase in member 'second'
+*      member 'second' is a string array, each string is the end of the sentence
+*/
 function createTree(phrases) {
   var root = tree.createNode();
   var beginNodes = [];
@@ -26,6 +34,7 @@ function createTree(phrases) {
   return root;
 }
 
+//sentence is created by randomly choosing children nodes
 function createSentence(root) {
   var sentence = '';
   //root does not have data

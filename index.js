@@ -1,9 +1,6 @@
 var express = require('express');
-var stylus = require('stylus');
-var nib = require('nib');
 var bodyParser = require('body-parser');
-var util = require('util');
-var generate_sentences = require('./generate_sentences.js')
+var generate_sentences = require('./generate_sentences.js');
 
 function randomInt(low, high) {
   return Math.floor(Math.random()*(high-low+1))+low;
@@ -29,7 +26,6 @@ function getImages(path, arr, index){
 var app = express();
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
-app.use(stylus.middleware({ src: __dirname + '/public' }));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname + '/public'));
 
