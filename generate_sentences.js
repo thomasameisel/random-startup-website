@@ -8,6 +8,14 @@ function lowerCaseFirstLetter(string) {
   return string.charAt(0).toLowerCase() + string.slice(1);
 }
 
+/*creates a tree with 4 levels
+* phrases is an array with 2 elements
+*  first element is an array of short sentences
+*  second element is an array of objects
+*    each object has two members
+*      member 'first' is a string phrase that can be combined with any phrase in member 'second'
+*      member 'second' is a string array, each string is the end of the sentence
+*/
 function createTree(phrases) {
   var root = tree.createNode();
   var beginNodes = [];
@@ -26,6 +34,7 @@ function createTree(phrases) {
   return root;
 }
 
+//sentence is created by randomly choosing children nodes
 function createSentence(root) {
   var sentence = '';
   //root does not have data
@@ -40,7 +49,8 @@ function generateAboutUs(name,industry) {
   var beginPhrases = [
     capitalizeFirstLetter(name)+' has been unique since day 1. ',
     capitalizeFirstLetter(name)+' is unlike any other company. ',
-    capitalizeFirstLetter(name)+' always strives to be different. '
+    capitalizeFirstLetter(name)+' always strives to be different. ',
+    'Here at '+capitalizeFirstLetter(name)+ ' we think differently about the '+lowerCaseFirstLetter(industry)+' industry. '
   ];
   var endPhrases = [
     {
@@ -57,7 +67,16 @@ function generateAboutUs(name,industry) {
       second: [
         'and we are committed to doing so while improving our customer\'s lives.',
         'which is why we have never compromised on any of our core values.',
+        'and we strive to continue to revolutionize in our field.',
         'and we will never stop until it is completely disrupted.'
+      ]
+    },
+    {
+      first: 'Our commitment to innovation ',
+      second:[
+          'is only rivaled by our hunger to shake up the '+lowerCaseFirstLetter(industry)+' industry.',
+          'has been, and will continue to be, a part of our company from day 1.',
+          'will lead us to continue to innovate'
       ]
     }
   ];
@@ -87,7 +106,15 @@ function generateWhatWeDo(name,product) {
         'one that does not cut corners and never includes underdeveloped features.',
         'while keeping a constant eye on our community and what we can do to help make our community better.',
         'and we always make sure that our customers are satisfied with '+capitalizeFirstLetter(product)+'.',
-        'and since we are small company we are able to easily pivot for our customers\' needs.'
+        'and since we are small company we are able to easily tend to our customers\' needs.'
+      ]
+    },
+    {
+      first: 'We strive to be the best company in the '+lowerCaseFirstLetter(product)+ ' industry. ',
+      second:[
+          'This means creating '+lowerCaseFirstLetter(product)+' at the highest possible level.',
+          'Our design principles and dedication to creating '+lowerCaseFirstLetter(product)+'s will help us achieve this goal.',
+          'We will foster our community with dedication to our core values.'
       ]
     }
   ];
@@ -119,6 +146,14 @@ function generateWhyChooseUs(name,product) {
         'We strongly believe that '+capitalizeFirstLetter(product)+' is by far the best product in its class.',
         'Our customers think that we are a fantastic company to buy products from.'
       ]
+    },
+    {
+      first: 'We strive to meet the demands of our customers. ',
+      second: [
+          'We are open to any and all desired implementations of '+lowerCaseFirstLetter(product)+'.',
+          'Without our approach to customer communication, we would not be where we are today.',
+          'No request is too great or too small, and we will serve the best '+lowerCaseFirstLetter(product)+' that the '+lowerCaseFirstLetter(product)+'can be.'
+      ]
     }
   ];
   var phrases = [beginPhrases, endPhrases];
@@ -126,7 +161,7 @@ function generateWhyChooseUs(name,product) {
   return createSentence(root);
 }
 
-function generateOurHistory(name,industry,year_founded) {
+function generateOurHistory(name,industry,year_founded,product) {
   var beginPhrases = [
     'Since '+year_founded+' we have been changing the way people live. ',
     capitalizeFirstLetter(name)+' was founded in '+year_founded+' with the goal to disrupt the '+lowerCaseFirstLetter(industry)+' industry. ',
@@ -134,7 +169,7 @@ function generateOurHistory(name,industry,year_founded) {
   ];
   var endPhrases = [
     {
-      first: 'John Johnson from Tech Talk Today said, \"',
+      first: 'John Johnson from Tech Talk Today has said, \"',
       second: [
         capitalizeFirstLetter(name)+' has always been a different type of company. Unlike anything we have seen before."',
         'There is one reason for '+capitalizeFirstLetter(name)+'\'s success: hard work and determination."',
@@ -147,7 +182,16 @@ function generateOurHistory(name,industry,year_founded) {
         'provide an easy and efficient cloud-focused solution for a clients which also disrupts every industry.',
         'do something with the cloud. We do not know what our product really does, but it has to do with the cloud for sure.',
         'create a different type of product.',
-        'change the world using cloud-faced technologies.'
+        'change the world using cloud-focused technologies.',
+        'truly innovate in the rapidly-growing '+lowerCaseFirstLetter(industry)+' industry.'
+      ]
+    },
+    {
+      first: 'With this goal in mind, ',
+      second: [
+          'we will never give up our ambition to revolutionize the '+lowerCaseFirstLetter(industry)+' industry.',
+          'we will create a truly different kind of '+lowerCaseFirstLetter(product)+".",
+          'we will continually strive to innovate.'
       ]
     }
   ];
@@ -160,7 +204,8 @@ function generateCareers(name,industry) {
   var beginPhrases = [
     'At '+capitalizeFirstLetter(name)+' we\'re different. ',
     'We are going to the reinvigorate and revolutionize the entire world. ',
-    'We always try to make the software development process as painless as possible. '
+    'We always try to make the software development process as painless as possible. ',
+    'Here at '+capitalizeFirstLetter(name)+' we\'re growing faster than ever before. '
   ];
   var endPhrases = [
     {
@@ -173,9 +218,17 @@ function generateCareers(name,industry) {
     {
       first: 'With our open offices and strict agile policy, ',
       second: [
-        'software development at'+capitalizeFirstLetter(name)+' is unlike anywhere else. Come join us.',
+        'software development at '+capitalizeFirstLetter(name)+' is unlike anywhere else. Come join us.',
         'we barely have the room for our 23 ping pong tables.',
         'our employees even get to choose which 12 hours of the day they want to work!'
+      ]
+    },
+    {
+      first: 'With our rapid growth, we\'re looking for bright new faces in the '+lowerCaseFirstLetter(industry)+' industry. ',
+      second: [
+          'Join us if you would like to change the world.',
+          'Contact us if you to join the '+capitalizeFirstLetter(name)+' revolution.',
+          'Bring your talents to '+capitalizeFirstLetter(name)+ 'today'
       ]
     }
   ];

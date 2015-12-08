@@ -67,7 +67,7 @@ describe('tree', function() {
     });
 
     describe('getRandomChild', function() {
-        it('should have a random distribution when calling getRandomChild', function(done) {
+        it('should have a random distribution when calling getRandomChild', function() {
             //should pass most of the time
             var newTree = tree.createNode('data');
             newTree.addChild('Adam Sandler');
@@ -91,8 +91,6 @@ describe('tree', function() {
                 expect(num).to.be.above(20);
                 expect(num).to.be.below(50);
             });
-            done();
-
         });
     });
 
