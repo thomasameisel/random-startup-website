@@ -42,6 +42,8 @@ You will need the following dependencies:
 * nightwatch
 * body-parser
 
+These can all be pulled from the package.json.
+
 cd to the directory and run 'node index.js' in the command line. Go to your browser and run localhost:3000.
 
 ##Running Tests
@@ -49,7 +51,7 @@ cd to the directory and run 'node index.js' in the command line. Go to your brow
   The project uses nightwatch.js to test browser automation. It currently runs tests on the Chrome browser.
   If you need to run on Firefox or IE consult this developer guide: http://nightwatchjs.org/guide#test-runner
   
-  Change your directory to the test folder and run "nightwatch" in the command line to run the browser tests.
+  Change your directory to the test folder and run "nightwatch" in the command line to run the browser tests (NOTE: you must install nightwatch globally to use this command).
   Make sure you are simultaneously running the project through a second command line window and run 'node index.js'.
   
   The project also uses mocha to test mainly the sentence generation files. Run mocha mocha_tests.js in in the 
