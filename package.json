@@ -2,9 +2,9 @@
   "name": "random-startup-website",
   "version": "0.0.1",
   "description": "Generates a random startup website",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "NODE_PATH=lib node app.js",
+    "start": "NODE_PATH=lib node index.js",
     "test": "mocha test"
   },
   "author": "Tommy Meisel",
@@ -16,6 +16,6 @@
     "jszip": "^2.5.0",
     "nib": "1.1.0",
     "body-parser": "~1.14.1",
-    "chai": "~3.4.1",
+    "chai": "~3.4.1"
   }
 }
